@@ -1,4 +1,4 @@
-## 2️⃣ `app/README.md`
+## `app/README.md`
 
 **Path:**  
 ```
