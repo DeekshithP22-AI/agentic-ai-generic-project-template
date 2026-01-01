@@ -1,0 +1,2 @@
+# Repo-wide Python tooling configuration
+# Individual services may override this with their own pyproject.toml

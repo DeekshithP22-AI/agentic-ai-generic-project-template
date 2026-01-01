@@ -1,0 +1,167 @@
+agentic-ai-generic-project-template/
++-- app
+|   +-- backend
+|   |   +-- src
+|   |       +-- agents
+|   |       |   +-- agent_one
+|   |       |   |   +-- prompts
+|   |       |   |   |   +-- __init__.py
+|   |       |   |   |   +-- constraints.md
+|   |       |   |   |   +-- goals.md
+|   |       |   |   |   +-- README.md
+|   |       |   |   |   +-- system.md
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- config.py
+|   |       |   |   +-- graph.py
+|   |       |   |   +-- README.md
+|   |       |   +-- agent_two
+|   |       |   |   +-- prompts
+|   |       |   |   |   +-- __init__.py
+|   |       |   |   |   +-- goals.md
+|   |       |   |   |   +-- README.md
+|   |       |   |   |   +-- system.md
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- config.py
+|   |       |   |   +-- graph.py
+|   |       |   |   +-- README.md
+|   |       |   +-- __init__.py
+|   |       |   +-- README.md
+|   |       +-- api
+|   |       |   +-- v1
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- agents.py
+|   |       |   |   +-- health.py
+|   |       |   |   +-- README.md
+|   |       |   |   +-- router.py
+|   |       |   |   +-- runs.py
+|   |       |   |   +-- schemas.py
+|   |       |   |   +-- workflows.py
+|   |       |   +-- __init__.py
+|   |       |   +-- deps.py
+|   |       |   +-- README.md
+|   |       +-- app
+|   |       |   +-- __init__.py
+|   |       |   +-- api.py
+|   |       |   +-- lifecycle.py
+|   |       |   +-- main.py
+|   |       |   +-- README.md
+|   |       +-- auth
+|   |       |   +-- __init__.py
+|   |       |   +-- azure_ad.py
+|   |       |   +-- README.md
+|   |       +-- config
+|   |       |   +-- __init__.py
+|   |       |   +-- README.md
+|   |       +-- graphs
+|   |       |   +-- state
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- base.py
+|   |       |   |   +-- compliance_state.py
+|   |       |   |   +-- README.md
+|   |       |   |   +-- shared.py
+|   |       |   +-- subgraphs
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- execution.py
+|   |       |   |   +-- planning.py
+|   |       |   |   +-- README.md
+|   |       |   |   +-- verification.py
+|   |       |   +-- __init__.py
+|   |       |   +-- entrprise_complaince_graph.py
+|   |       |   +-- README.md
+|   |       +-- guardrails
+|   |       |   +-- __init__.py
+|   |       |   +-- output_guard.py
+|   |       |   +-- README.md
+|   |       +-- nodes
+|   |       |   +-- control
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- guardrail.py
+|   |       |   |   +-- human_review.py
+|   |       |   |   +-- README.md
+|   |       |   +-- memory
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- README.md
+|   |       |   |   +-- updater.py
+|   |       |   +-- reasoning
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- critic.py
+|   |       |   |   +-- executor.py
+|   |       |   |   +-- planner.py
+|   |       |   |   +-- README.md
+|   |       |   +-- __init__.py
+|   |       |   +-- base.py
+|   |       |   +-- compliance.py
+|   |       |   +-- ingestion.py
+|   |       |   +-- README.md
+|   |       |   +-- risk.py
+|   |       |   +-- summary.py
+|   |       +-- observability
+|   |       |   +-- __init__.py
+|   |       |   +-- README.md
+|   |       |   +-- tracing.py
+|   |       +-- policies
+|   |       |   +-- __init__.py
+|   |       |   +-- README.md
+|   |       +-- prompts
+|   |       |   +-- nodes
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- critic.md
+|   |       |   |   +-- executor.md
+|   |       |   |   +-- planner.md
+|   |       |   |   +-- README.md
+|   |       |   |   +-- summarizer.md
+|   |       |   +-- shared
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- README.md
+|   |       |   |   +-- safety.md
+|   |       |   |   +-- style.md
+|   |       |   |   +-- system.md
+|   |       |   +-- templates
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- README.md
+|   |       |   |   +-- reasoning.jinja
+|   |       |   |   +-- response.jinja
+|   |       |   |   +-- tool_call.jinja
+|   |       |   +-- __init__.py
+|   |       |   +-- compliance_prompt.py
+|   |       |   +-- README.md
+|   |       |   +-- risk_prompt.py
+|   |       |   +-- summary_propmt.py
+|   |       +-- services
+|   |       |   +-- __init__.py
+|   |       |   +-- compliance_service.py
+|   |       |   +-- README.md
+|   |       +-- tools
+|   |       |   +-- adapters
+|   |       |   |   +-- __init__.py
+|   |       |   |   +-- database.py
+|   |       |   |   +-- http.py
+|   |       |   |   +-- queue.py
+|   |       |   |   +-- README.md
+|   |       |   +-- __init__.py
+|   |       |   +-- base.py
+|   |       |   +-- llm.py
+|   |       |   +-- README.md
+|   |       |   +-- registry.py
+|   |       +-- __init__.py
+|   |       +-- langgraph.json
+|   |       +-- pyproject.toml
+|   |       +-- README.md
+|   +-- __init__.py
+|   +-- README.md
++-- docker
+|   +-- backend.Dockerfile
+|   +-- README.md
++-- docs
+|   +-- README.md
++-- guards
+|   +-- README.md
++-- infra
+|   +-- README.md
++-- .env.example
++-- .gitignore
++-- generate_tree.py
++-- LICENSE
++-- project_structure_generator.py
++-- pyproject.toml
++-- README.md
