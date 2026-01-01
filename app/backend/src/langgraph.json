@@ -1,1 +1,17 @@
-{}
+{
+    "$schema": "https://langgra.ph/schema.json",
+    "dependencies": [
+      "."
+    ],
+    "graphs": {
+      "agent_one": "./agents/agent_one/graph.py:graph",
+      "agent_two": "./agents/agent_two/graph.py:graph"
+    },
+    "env": "./.env.example",
+    "python_version": "3.11",
+    "http": {
+      "app": "./app/main.py:app"
+    },
+    "dockerfile_lines": []
+  }
+  
