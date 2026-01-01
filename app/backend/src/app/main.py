@@ -2,6 +2,11 @@ from fastapi import FastAPI, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from api.v1.router import router as api_router
 from auth.azure_ad import verify_token
+import logging.config
+import yaml
+
+with open("log_config.yaml") as f:
+    logging.config.dictConfig(yaml.safe_load(f))
 
 # Create FastAPI app
 app = FastAPI(
